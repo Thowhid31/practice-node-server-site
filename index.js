@@ -47,14 +47,6 @@ app.post('/user', (req, res)=>{
     res.send(user)
 })  
 
-app.get('/fruits', (req, res)=>{
-    res.send(['Mango', 'Apple', 'Oranges'])
-})
-
-app.get('/fruit/mango/fazle', (req, res)=>{
-    res.send('sour sour fazle flavour')
-})
-
 app.listen(port, ()=>{
     console.log('Hello Node.js, I am coming.', port);
 });
